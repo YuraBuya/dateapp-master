@@ -1,0 +1,21 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- 남성 프로필 이미지 SVG -->
+  <defs>
+    <linearGradient id="maleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b894;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="400" height="400" fill="url(#maleGradient)"/>
+  
+  <!-- 얼굴 -->
+  <circle cx="200" cy="160" r="60" fill="#2d3436" opacity="0.1"/>
+  
+  <!-- 몸 -->
+  <ellipse cx="200" cy="320" rx="80" ry="90" fill="#2d3436" opacity="0.1"/>
+  
+  <!-- 텍스트 -->
+  <text x="200" y="220" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" opacity="0.8">Male Profile</text>
+</svg>

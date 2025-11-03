@@ -1,0 +1,81 @@
+{
+  "proposals": [
+    {
+      "id": "P20250901",
+      "expiresAt": "2025-09-03T12:00:00Z",
+      "createdAt": "2025-09-01T09:00:00Z",
+      "type": "weekly",
+      "candidates": [
+        {
+          "id": "C001",
+          "memberId": "M001",
+          "name": "김하나",
+          "gender": "female",
+          "age": 31,
+          "job": "마케터",
+          "location": "서울 강남",
+          "photos": ["/images/profiles/female-profile.svg"],
+          "summary": "대화와 성장을 중시하는 마케터",
+          "highlights": ["비흡연", "전시 좋아함", "계획형"],
+          "matchScore": 92,
+          "commonInterests": ["미술관", "카페", "독서"],
+          "introduction": "안녕하세요! 마케팅 업계에서 7년째 일하고 있는 하나입니다. 새로운 사람과의 만남을 통해 서로 성장할 수 있는 관계를 만들어가고 싶어요."
+        },
+        {
+          "id": "C002", 
+          "memberId": "M002",
+          "name": "박준호",
+          "gender": "male",
+          "age": 32,
+          "job": "소프트웨어 엔지니어",
+          "location": "성수",
+          "photos": ["/images/profiles/male-profile.svg"],
+          "summary": "기술과 사람을 연결하는 개발자",
+          "highlights": ["운동", "독서", "음악 감상"],
+          "matchScore": 89,
+          "commonInterests": ["독서", "음악", "영화"],
+          "introduction": "안녕하세요! 스타트업에서 풀스택 개발자로 일하는 준호입니다. 기술로 세상을 바꾸는 일에 열정을 가지고 있어요. 함께 성장하고 서로를 응원할 수 있는 분을 만나고 싶습니다."
+        },
+        {
+          "id": "C003",
+          "memberId": "M003", 
+          "name": "박연우",
+          "gender": "female",
+          "age": 32,
+          "job": "개발자",
+          "location": "판교",
+          "photos": ["/images/profiles/female-profile.svg"],
+          "summary": "문제해결에 진심인 개발자",
+          "highlights": ["러닝", "독서", "비건 식단"],
+          "matchScore": 85,
+          "commonInterests": ["독서", "건강관리", "러닝"],
+          "introduction": "IT 업계에서 개발자로 일하는 연우입니다. 건강한 몸과 마음을 위해 꾸준히 러닝을 하고 있어요. 서로의 목표를 응원해줄 수 있는 파트너를 찾고 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "P20250825",
+      "expiresAt": "2025-08-27T12:00:00Z",
+      "createdAt": "2025-08-25T09:00:00Z",
+      "type": "premium",
+      "status": "expired",
+      "candidates": [
+        {
+          "id": "C004",
+          "memberId": "M004",
+          "name": "이소영",
+          "gender": "female",
+          "age": 29,
+          "job": "변호사",
+          "location": "여의도",
+          "photos": ["/images/profiles/female-profile.svg"],
+          "summary": "정의로운 마음을 가진 변호사",
+          "highlights": ["클래식 음악", "와인", "여행"],
+          "matchScore": 94,
+          "commonInterests": ["클래식", "와인", "독서"],
+          "introduction": "법무법인에서 변호사로 일하는 소영입니다. 클래식 음악을 사랑하고 좋은 와인을 즐기는 것을 좋아해요. 깊이 있는 대화를 나눌 수 있는 분과 만나고 싶습니다."
+        }
+      ]
+    }
+  ]
+}
