@@ -1,0 +1,427 @@
+{
+  "member": {
+    "id": "M001",
+    "avatar": "/images/profiles/female-profile.svg",
+    "name": "김민지",
+    "age": 28,
+    "gender": "female",
+    "city": "서울",
+    "subscriptionTier": "premium",
+    "verificationStatus": "verified",
+    "lastActive": "2025-10-31T10:30:00Z",
+    "matchesCount": 12,
+    "reportsCount": 0,
+    "riskScore": 15,
+    "riskLevel": "low",
+    "status": "active",
+    "joinDate": "2025-01-15T00:00:00Z",
+    "email": "kim***@example.com",
+    "phone": "010-****-5678",
+    "bio": "진지한 만남을 원합니다. 서로 존중하며 함께 성장할 수 있는 사람과의 인연을 기대합니다.",
+    "photos": [
+      "/images/profiles/female-profile.svg",
+      "/images/profiles/female-profile-2.svg"
+    ],
+    "messagesLast30d": 45,
+    "preferences": {
+      "ageRange": {
+        "min": 28,
+        "max": 35
+      },
+      "location": [
+        "서울",
+        "경기"
+      ],
+      "interests": [
+        "영화",
+        "독서",
+        "여행",
+        "요리"
+      ]
+    },
+    "verificationDocs": [
+      {
+        "id": "D001",
+        "type": "id_card",
+        "url": "/docs/id_001.jpg",
+        "status": "verified",
+        "uploadedAt": "2025-01-16T00:00:00Z",
+        "reviewedAt": "2025-01-17T00:00:00Z"
+      },
+      {
+        "id": "D002",
+        "type": "selfie",
+        "url": "/docs/selfie_001.jpg",
+        "status": "verified",
+        "uploadedAt": "2025-01-16T00:00:00Z",
+        "reviewedAt": "2025-01-17T00:00:00Z"
+      }
+    ],
+    "riskSignals": [],
+    "timeline": [
+      {
+        "id": "T001",
+        "type": "signup",
+        "title": "회원 가입",
+        "description": "플랫폼에 새로 가입했습니다.",
+        "timestamp": "2025-01-15T09:00:00Z",
+        "icon": "👋",
+        "metadata": {
+          "device": "iOS",
+          "ip": "123.456.789.0",
+          "referral": "google_ads"
+        }
+      },
+      {
+        "id": "T002",
+        "type": "document_upload",
+        "title": "인증 서류 제출",
+        "description": "신분증 및 셀카 인증을 제출했습니다.",
+        "timestamp": "2025-01-16T14:30:00Z",
+        "icon": "📄",
+        "metadata": {
+          "documentType": "id_card, selfie",
+          "uploadCount": 2
+        }
+      },
+      {
+        "id": "T003",
+        "type": "match",
+        "title": "첫 매칭 성공",
+        "description": "이준호 회원과 매칭되었습니다.",
+        "timestamp": "2025-01-20T10:00:00Z",
+        "icon": "💕",
+        "metadata": {
+          "matchedWith": "M002",
+          "matchScore": 92
+        }
+      },
+      {
+        "id": "T004",
+        "type": "login",
+        "title": "로그인",
+        "description": "모바일 앱에서 로그인했습니다.",
+        "timestamp": "2025-10-31T10:30:00Z",
+        "icon": "🔐",
+        "metadata": {
+          "device": "iOS",
+          "location": "서울"
+        }
+      }
+    ],
+    "adminNotes": [
+      {
+        "id": "N001",
+        "content": "매우 활발한 사용자입니다. 긍정적인 피드백이 많습니다.",
+        "author": "Admin Kim",
+        "createdAt": "2025-02-01T10:00:00Z",
+        "isImportant": false
+      },
+      {
+        "id": "N002",
+        "content": "프리미엄 등급 갱신 예정. 할인 혜택 제공 고려.",
+        "author": "Admin Park",
+        "createdAt": "2025-09-15T14:00:00Z",
+        "isImportant": true
+      }
+    ],
+    "auditLogs": [
+      {
+        "id": "A001",
+        "action": "인증 승인",
+        "performedBy": "Admin Park",
+        "timestamp": "2025-01-17T10:00:00Z",
+        "reason": "Documents verified successfully",
+        "details": "신분증 및 셀카 인증을 승인했습니다. 모든 서류가 유효함."
+      },
+      {
+        "id": "A002",
+        "action": "등급 변경",
+        "performedBy": "Admin Kim",
+        "timestamp": "2025-03-01T09:00:00Z",
+        "reason": "User request",
+        "details": "Basic에서 Premium으로 등급 변경. 사용자 요청에 따른 수동 변경."
+      }
+    ]
+  },
+  "highRiskMember": {
+    "id": "M004",
+    "avatar": "/images/profiles/male-profile.svg",
+    "name": "최동욱",
+    "age": 35,
+    "gender": "male",
+    "city": "대구",
+    "subscriptionTier": "premium",
+    "verificationStatus": "verified",
+    "lastActive": "2025-10-29T18:00:00Z",
+    "matchesCount": 18,
+    "reportsCount": 2,
+    "riskScore": 65,
+    "riskLevel": "high",
+    "status": "flagged",
+    "joinDate": "2025-03-05T00:00:00Z",
+    "email": "choi***@example.com",
+    "phone": "010-****-3456",
+    "bio": "진심으로 만남을 원합니다.",
+    "flags": [
+      "부적절한 메시지",
+      "프로필 사진 문제"
+    ],
+    "photos": [
+      "/images/profiles/male-profile.svg"
+    ],
+    "messagesLast30d": 200,
+    "preferences": {
+      "ageRange": {
+        "min": 20,
+        "max": 35
+      },
+      "location": [
+        "대구",
+        "경북"
+      ],
+      "interests": [
+        "게임",
+        "영화"
+      ]
+    },
+    "verificationDocs": [
+      {
+        "id": "D005",
+        "type": "id_card",
+        "url": "/docs/id_004.jpg",
+        "status": "verified",
+        "uploadedAt": "2025-03-06T00:00:00Z",
+        "reviewedAt": "2025-03-07T00:00:00Z"
+      }
+    ],
+    "riskSignals": [
+      {
+        "id": "R002",
+        "type": "behavior_anomaly",
+        "severity": "high",
+        "confidence": 0.85,
+        "description": "짧은 시간 내에 다수의 회원에게 동일한 메시지를 전송했습니다.",
+        "detectedAt": "2025-10-20T10:00:00Z",
+        "recommendation": "계정을 정지하고 사용자에게 경고를 발송하세요."
+      },
+      {
+        "id": "R003",
+        "type": "photo_mismatch",
+        "severity": "medium",
+        "confidence": 0.7,
+        "description": "프로필 사진과 인증 셀카 간에 불일치가 감지되었습니다.",
+        "detectedAt": "2025-10-22T15:00:00Z",
+        "recommendation": "추가 인증을 요청하거나 프로필 사진을 교체하도록 안내하세요."
+      }
+    ],
+    "timeline": [
+      {
+        "id": "T006",
+        "type": "report",
+        "title": "신고 접수 (1)",
+        "description": "부적절한 메시지로 신고되었습니다.",
+        "timestamp": "2025-10-20T10:00:00Z",
+        "icon": "🚨",
+        "metadata": {
+          "reportedBy": "M010",
+          "reason": "inappropriate_message",
+          "severity": "high"
+        }
+      },
+      {
+        "id": "T007",
+        "type": "report",
+        "title": "신고 접수 (2)",
+        "description": "또 다른 사용자로부터 신고를 받았습니다.",
+        "timestamp": "2025-10-22T15:00:00Z",
+        "icon": "🚨",
+        "metadata": {
+          "reportedBy": "M015",
+          "reason": "harassment",
+          "severity": "critical"
+        }
+      },
+      {
+        "id": "T008",
+        "type": "admin_action",
+        "title": "경고 발송",
+        "description": "Admin Choi가 사용자에게 경고 메시지를 발송했습니다.",
+        "timestamp": "2025-10-23T09:00:00Z",
+        "icon": "⚠️",
+        "metadata": {
+          "actionType": "warning",
+          "performedBy": "Admin Choi"
+        }
+      }
+    ],
+    "adminNotes": [
+      {
+        "id": "N003",
+        "content": "다수의 신고를 받았습니다. 계정 정지 고려 중. 사용자에게 최종 경고를 발송했으며, 추가 신고 시 즉시 정지할 예정입니다.",
+        "author": "Admin Choi",
+        "createdAt": "2025-10-23T09:00:00Z",
+        "isImportant": true
+      },
+      {
+        "id": "N004",
+        "content": "프로필 사진과 인증 셀카 간 불일치 확인됨. 추가 인증 요청함.",
+        "author": "Admin Lee",
+        "createdAt": "2025-10-22T16:00:00Z",
+        "isImportant": true
+      }
+    ],
+    "auditLogs": [
+      {
+        "id": "A002",
+        "action": "경고 발송",
+        "performedBy": "Admin Choi",
+        "timestamp": "2025-10-23T09:00:00Z",
+        "reason": "부적절한 메시지 반복",
+        "details": "사용자에게 경고 메시지를 발송하고 행동을 모니터링 중입니다. 추가 위반 시 계정 정지 예정."
+      },
+      {
+        "id": "A003",
+        "action": "계정 플래그 설정",
+        "performedBy": "Admin Lee",
+        "timestamp": "2025-10-22T16:00:00Z",
+        "reason": "프로필 사진 문제",
+        "details": "프로필 사진과 인증 셀카 불일치로 계정에 플래그를 설정했습니다."
+      }
+    ]
+  },
+  "apiEndpoints": {
+    "getMemberDetails": {
+      "method": "GET",
+      "url": "/api/admin/members/:memberId",
+      "response": "Member object with all details"
+    },
+    "suspendMember": {
+      "method": "POST",
+      "url": "/api/admin/members/:memberId/suspend",
+      "body": {
+        "reason": "string (required)",
+        "duration": "number (days, optional)"
+      },
+      "response": {
+        "success": true,
+        "message": "Member suspended successfully",
+        "auditLogId": "A004"
+      }
+    },
+    "restoreMember": {
+      "method": "POST",
+      "url": "/api/admin/members/:memberId/restore",
+      "response": {
+        "success": true,
+        "message": "Member restored successfully",
+        "auditLogId": "A005"
+      }
+    },
+    "adjustTier": {
+      "method": "PATCH",
+      "url": "/api/admin/members/:memberId/tier",
+      "body": {
+        "tier": "basic | premium | vip (required)",
+        "reason": "string (optional)"
+      },
+      "response": {
+        "success": true,
+        "oldTier": "basic",
+        "newTier": "premium",
+        "auditLogId": "A006"
+      }
+    },
+    "addNote": {
+      "method": "POST",
+      "url": "/api/admin/members/:memberId/notes",
+      "body": {
+        "content": "string (required)",
+        "isImportant": "boolean (optional, default: false)"
+      },
+      "response": {
+        "success": true,
+        "note": {
+          "id": "N005",
+          "content": "...",
+          "author": "Admin Name",
+          "createdAt": "2025-10-31T10:00:00Z",
+          "isImportant": false
+        }
+      }
+    },
+    "revealPII": {
+      "method": "POST",
+      "url": "/api/admin/members/:memberId/documents/:docId/reveal",
+      "body": {
+        "twoFactorCode": "string (6 digits, required)"
+      },
+      "response": {
+        "success": true,
+        "documentUrl": "/docs/full_resolution.jpg",
+        "auditLogId": "A007"
+      }
+    },
+    "sendMessage": {
+      "method": "POST",
+      "url": "/api/admin/members/:memberId/messages",
+      "body": {
+        "subject": "string (required)",
+        "content": "string (required)",
+        "priority": "low | normal | high (optional)"
+      },
+      "response": {
+        "success": true,
+        "messageId": "MSG001",
+        "sentAt": "2025-10-31T10:00:00Z"
+      }
+    },
+    "issueRefund": {
+      "method": "POST",
+      "url": "/api/admin/members/:memberId/billing/refund",
+      "body": {
+        "transactionId": "string (required)",
+        "amount": "number (required)",
+        "reason": "string (required)"
+      },
+      "response": {
+        "success": true,
+        "refundId": "REF001",
+        "amount": 50000,
+        "auditLogId": "A008"
+      }
+    }
+  },
+  "webhookEvents": {
+    "member.suspended": {
+      "event": "member.suspended",
+      "data": {
+        "memberId": "M004",
+        "reason": "Repeated violations",
+        "suspendedBy": "Admin Choi",
+        "suspendedAt": "2025-10-31T10:00:00Z"
+      }
+    },
+    "member.tier.changed": {
+      "event": "member.tier.changed",
+      "data": {
+        "memberId": "M001",
+        "oldTier": "basic",
+        "newTier": "premium",
+        "changedBy": "Admin Kim",
+        "changedAt": "2025-10-31T10:00:00Z"
+      }
+    },
+    "member.document.revealed": {
+      "event": "member.document.revealed",
+      "data": {
+        "memberId": "M001",
+        "documentId": "D001",
+        "revealedBy": "Admin Park",
+        "revealedAt": "2025-10-31T10:00:00Z",
+        "twoFactorVerified": true
+      }
+    }
+  }
+}
+

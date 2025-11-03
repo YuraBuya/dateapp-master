@@ -1,0 +1,7 @@
+.select :global(.ant-select-selector) {
+  border: 1px solid var(--antd-form) !important;
+}
+
+.error :global(.ant-select-selector) {
+  border-color: #ef4444 !important;
+} 

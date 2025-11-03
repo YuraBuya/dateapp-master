@@ -1,0 +1,18 @@
+{
+  "type": "Topology",
+  "arcs": [],
+  "objects": {
+    "countries": {
+      "type": "GeometryCollection",
+      "geometries": [
+        {
+          "type": "Polygon",
+          "properties": {
+            "name": "South Korea"
+          },
+          "coordinates": [[[124, 33], [130, 33], [130, 39], [124, 39], [124, 33]]]
+        }
+      ]
+    }
+  }
+}
