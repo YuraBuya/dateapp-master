@@ -1,6 +1,6 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import { Search, Bell, Settings, Sparkles, Users, Heart, TrendingUp } from 'lucide-react'
 import { ThemeToggle } from '@/components/ThemeToggle'
 
@@ -12,13 +12,13 @@ interface AdminHeaderProps {
   }
 }
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: -20 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
-      type: 'spring',
+      type: 'spring' as const,
       stiffness: 300,
       damping: 24
     }
@@ -27,7 +27,7 @@ const itemVariants = {
 
 export function AdminHeader({ stats }: AdminHeaderProps) {
   return (
-    <motion.header 
+    <motion.header
       variants={itemVariants}
       initial="hidden"
       animate="visible"
@@ -64,15 +64,15 @@ export function AdminHeader({ stats }: AdminHeaderProps) {
 
           {/* Right: Actions */}
           <div className="flex items-center gap-2">
-            <button 
-              aria-label="Search" 
+            <button
+              aria-label="Search"
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
             >
               <Search className="w-5 h-5 text-gray-600 dark:text-gray-400" />
             </button>
-            
-            <button 
-              aria-label="Notifications" 
+
+            <button
+              aria-label="Notifications"
               className="relative p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
             >
               <Bell className="w-5 h-5 text-gray-600 dark:text-gray-400" />
@@ -81,8 +81,8 @@ export function AdminHeader({ stats }: AdminHeaderProps) {
 
             <ThemeToggle />
 
-            <button 
-              aria-label="Settings" 
+            <button
+              aria-label="Settings"
               className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-purple-500 transition-colors"
             >
               <Settings className="w-5 h-5 text-gray-600 dark:text-gray-400" />

@@ -6,6 +6,13 @@
 import { Users, UserPlus, Activity, Crown, CheckCircle, AlertTriangle, Flag } from 'lucide-react'
 import type { Member } from './types'
 
+export type MemberStatus =
+  | 'active'
+  | 'suspended'
+  | 'inactive'
+  | 'pending'
+  | 'flagged'
+
 // Mock member data for development
 export const MOCK_MEMBERS: Member[] = [
   {
@@ -416,11 +423,12 @@ export const RISK_COLORS = {
   critical: 'text-red-600 bg-red-100 dark:text-red-400 dark:bg-red-900/30'
 }
 
-export const STATUS_COLORS = {
-  active: 'text-green-600 bg-green-100 dark:text-green-400 dark:bg-green-900/30',
-  suspended: 'text-red-600 bg-red-100 dark:text-red-400 dark:bg-red-900/30',
-  inactive: 'text-gray-600 bg-gray-100 dark:text-gray-400 dark:bg-gray-800',
-  pending: 'text-yellow-600 bg-yellow-100 dark:text-yellow-400 dark:bg-yellow-900/30'
+export const STATUS_COLORS: Record<MemberStatus, string> = {
+  active: 'bg-green-100 text-green-700',
+  suspended: 'bg-yellow-100 text-yellow-700',
+  inactive: 'bg-gray-100 text-gray-700',
+  pending: 'bg-blue-100 text-blue-700',
+  flagged: 'bg-red-100 text-red-700',
 }
 
 export const VERIFICATION_COLORS = {

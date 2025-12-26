@@ -1,12 +1,11 @@
-/**
- * Matching Management Page
- * Premium design with detail panel
- */
-
-'use client'
-
-import { MatchingView } from '@/src/features/admin/matching'
+// app/admin/matching/page.tsx
+import { Suspense } from 'react'
+import { MatchingPageClient } from './MatchingPageClient'
 
 export default function MatchingPage() {
-  return <MatchingView />
+  return (
+    <Suspense fallback={<div />}>
+      <MatchingPageClient />
+    </Suspense>
+  )
 }

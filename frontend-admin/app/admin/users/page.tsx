@@ -1,5 +1,11 @@
-import { MembersView } from '@/src/features/admin/members'
+// app/admin/members/page.tsx
+import { Suspense } from 'react'
+import { MembersPageClient } from './MembersPageClient'
 
 export default function UsersPage() {
-  return <MembersView />
+  return (
+    <Suspense fallback={<div />}>
+      <MembersPageClient />
+    </Suspense>
+  )
 }

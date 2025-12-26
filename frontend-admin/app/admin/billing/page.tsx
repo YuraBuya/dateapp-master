@@ -1,5 +1,11 @@
-import { BillingView } from '@/src/features/admin/billing'
+// app/admin/billing/page.tsx
+import { Suspense } from 'react'
+import { BillingPageClient } from './BillingPageClient'
 
 export default function BillingPage() {
-  return <BillingView />
+  return (
+    <Suspense fallback={<div />}>
+      <BillingPageClient />
+    </Suspense>
+  )
 }

@@ -164,7 +164,7 @@ export const MemberSummaryStrip = memo(function MemberSummaryStrip({
           </div>
         </div>
       </div>
-      
+
       {/* Elegant Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent"></div>
     </div>
