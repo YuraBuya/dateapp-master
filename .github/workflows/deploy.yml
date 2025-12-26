@@ -7,68 +7,52 @@ on:
       - 'frontend/**'
       - 'frontend-admin/**'
 
+  workflow_dispatch:
+
 jobs:
   deploy-frontend:
-    if: contains(join(github.event.commits.*.modified, ' '), 'frontend/')
     runs-on: ubuntu-latest
-
     defaults:
       run:
         working-directory: frontend
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
           cache-dependency-path: frontend/package-lock.json
 
-      - name: Install deps
-        run: npm ci
+      - run: npm ci
+      - run: npm run build
 
-      - name: Build
-        run: npm run build
-
-      - name: Deploy to Vercel (frontend)
-        run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+      - run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
         env:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_FRONTEND_PROJECT_ID }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
 
   deploy-frontend-admin:
-    if: contains(join(github.event.commits.*.modified, ' '), 'frontend-admin/')
     runs-on: ubuntu-latest
-
     defaults:
       run:
         working-directory: frontend-admin
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
           cache-dependency-path: frontend-admin/package-lock.json
 
-      - name: Install deps
-        run: npm ci
+      - run: npm ci
+      - run: npm run type-check
+      - run: npm run build
 
-      - name: Type check
-        run: npm run type-check
-
-      - name: Build
-        run: npm run build
-
-      - name: Deploy to Vercel (admin)
-        run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
+      - run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
         env:
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_ADMIN_PROJECT_ID }}
           VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
