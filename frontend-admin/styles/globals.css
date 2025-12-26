@@ -47,6 +47,7 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+
   * {
     box-sizing: border-box;
     padding: 0;
@@ -69,6 +70,7 @@
     text-decoration: none;
   }
 }
+
 
 /* Admin specific styles */
 .admin-gradient {
@@ -97,7 +99,7 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
-  
+
   .admin-sidebar.open {
     transform: translateX(0);
   }
@@ -149,6 +151,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
